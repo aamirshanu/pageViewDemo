@@ -12,6 +12,7 @@
 		04F62041227C405C00E16550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6203F227C405C00E16550 /* Main.storyboard */; };
 		04F62043227C405E00E16550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F62042227C405E00E16550 /* Assets.xcassets */; };
 		04F62046227C405E00E16550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F62044227C405E00E16550 /* LaunchScreen.storyboard */; };
+		04F6204E227C4C1B00E16550 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6204D227C4C1B00E16550 /* PaymentDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		04F62042227C405E00E16550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F62045227C405E00E16550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F62047227C405E00E16550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F6204D227C4C1B00E16550 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				04F62042227C405E00E16550 /* Assets.xcassets */,
 				04F62044227C405E00E16550 /* LaunchScreen.storyboard */,
 				04F62047227C405E00E16550 /* Info.plist */,
+				04F6204D227C4C1B00E16550 /* PaymentDetailsViewController.swift */,
 			);
 			path = pageViewDemo;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F6203E227C405C00E16550 /* ViewController.swift in Sources */,
+				04F6204E227C4C1B00E16550 /* PaymentDetailsViewController.swift in Sources */,
 				04F6203C227C405C00E16550 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
