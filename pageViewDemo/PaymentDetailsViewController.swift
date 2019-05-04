@@ -10,9 +10,12 @@ import UIKit
 
 class PaymentDetailsViewController: UIViewController {
 
+    @IBOutlet weak var viewBlack: UIVisualEffectView!
+    @IBOutlet weak var viewBottomPaypal: UIView!
+    @IBOutlet weak var viewBottomCreditCard: UIView!
+    @IBOutlet weak var viewBankAccount: UIView!
     @IBOutlet weak var viewBottom: UIView!
     @IBOutlet weak var constrantViewBottom: NSLayoutConstraint!
-    @IBOutlet weak var viewBlack: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lblChooseCountry: UILabel!
     @IBOutlet weak var tblCountry: UITableView!
@@ -23,7 +26,11 @@ class PaymentDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
+        viewCorner(view: viewBottomPaypal)
+        viewCorner(view: viewBottomCreditCard)
+        viewCorner(view: viewBankAccount)
+//        viewBlack.roundCorners([.topLeft, .topRight], radius: 15)
         viewBlack.isHidden = true
         viewBottom.isHidden = true
         scrollView.isScrollEnabled = true
@@ -32,7 +39,12 @@ class PaymentDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    func viewCorner(view: UIView) {
+        view.layer.cornerRadius = 12
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.clipsToBounds = true
+    }
     @IBAction func btnAddNewPayment(_ sender: UIButton) {
         
         viewBlack.isHidden = false
@@ -124,4 +136,14 @@ extension PaymentDetailsViewController: UITableViewDelegate{
         }
        
     }
+}
+extension UIView {
+
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+
 }

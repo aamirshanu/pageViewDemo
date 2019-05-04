@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040D6175227D7AC8001B489F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D6174227D7AC8001B489F /* PageViewController.swift */; };
+		040D6177227DB10B001B489F /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D6176227DB10B001B489F /* BottomViewController.swift */; };
 		04F6203C227C405C00E16550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6203B227C405C00E16550 /* AppDelegate.swift */; };
 		04F6203E227C405C00E16550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6203D227C405C00E16550 /* ViewController.swift */; };
 		04F62041227C405C00E16550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F6203F227C405C00E16550 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040D6174227D7AC8001B489F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		040D6176227DB10B001B489F /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 		04F62038227C405C00E16550 /* pageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6203B227C405C00E16550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F6203D227C405C00E16550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				04F62044227C405E00E16550 /* LaunchScreen.storyboard */,
 				04F62047227C405E00E16550 /* Info.plist */,
 				04F6204D227C4C1B00E16550 /* PaymentDetailsViewController.swift */,
+				040D6174227D7AC8001B489F /* PageViewController.swift */,
+				040D6176227DB10B001B489F /* BottomViewController.swift */,
 			);
 			path = pageViewDemo;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				04F6203E227C405C00E16550 /* ViewController.swift in Sources */,
 				04F6204E227C4C1B00E16550 /* PaymentDetailsViewController.swift in Sources */,
+				040D6177227DB10B001B489F /* BottomViewController.swift in Sources */,
 				04F6203C227C405C00E16550 /* AppDelegate.swift in Sources */,
+				040D6175227D7AC8001B489F /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
