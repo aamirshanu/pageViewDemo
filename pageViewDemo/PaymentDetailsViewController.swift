@@ -30,10 +30,11 @@ class PaymentDetailsViewController: UIViewController {
         viewCorner(view: viewBottomPaypal)
         viewCorner(view: viewBottomCreditCard)
         viewCorner(view: viewBankAccount)
-//        viewBlack.roundCorners([.topLeft, .topRight], radius: 15)
+        viewCorner(view: viewBottom)
+        viewBottom.roundCorners([.topLeft, .topRight], radius: 15)
         viewBlack.isHidden = true
         viewBottom.isHidden = true
-        scrollView.isScrollEnabled = true
+        
         tblCardDetail.isHidden = true
         tblCountry.isHidden = true
         // Do any additional setup after loading the view.
